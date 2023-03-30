@@ -3,7 +3,6 @@
 #COPY target/locations-0.0.1-SNAPSHOT.jar /opt/app/locations.jar
 #CMD ["java", "-jar", "/opt/app/locations.jar"]
 
-
 FROM openjdk:17 as builder
 WORKDIR application
 COPY target/locations-0.0.1-SNAPSHOT.jar locations.jar
